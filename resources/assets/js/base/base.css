@@ -1,0 +1,26 @@
+#title{
+    font-size: 200%;
+}
+#topCace {
+    border: 1px solid #CCC;
+    padding: 10px;
+    overflow: hidden;
+    left: 1%;
+    right: 1%;
+}
+#topCace > ul {
+    list-style: none outside none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+}
+#topCace > ul > li {
+    float: left;
+    padding: 5px;
+    position: relative;
+    left: -50%;
+    margin: 10px;
+    background-color: #900;
+}
