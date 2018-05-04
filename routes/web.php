@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/{any}', function () {
+//Route::get('/{any}', function () {
+//    return view('vue');
+//})->where('any', '.*');
+
+Route::get('/', function () {
     return view('vue');
 })->where('any', '.*');
 
