@@ -13,9 +13,20 @@ class MachineNamesTableSeeder extends Seeder
     public function run()
     {
         $para = [
-            'machine_id' => '1',
             'machine_name' => 'sdvx',
         ];
+        $data = new MachineName;
+        $data->fill($para)->save();
+
+        $para = [
+            'machine_name' => "pop'n",
+        ];
+        $data = new MachineName;
+        $data->fill($para)->save();
+
+        $para = [
+        'machine_name' => 'chunithm',
+    ];
         $data = new MachineName;
         $data->fill($para)->save();
     }

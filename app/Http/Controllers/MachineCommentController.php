@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\MachineComment;
 
 class MachineCommentController extends Controller
 {
@@ -13,7 +14,7 @@ class MachineCommentController extends Controller
      */
     public function index()
     {
-        //
+        return MachineComment::all()->keyBy('id');
     }
 
     /**

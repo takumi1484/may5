@@ -16,5 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+//確認用 /api/machine でアクセスできる
 Route::resource('machine',  'MachineController');
+Route::resource('machineName',  'MachineNameController');
+Route::resource('machineComment',  'MachineCommentController');
+Route::resource('shop',  'ShopController');
+Route::resource('shopComment',  'ShopCommentController');

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Shop;
 use Illuminate\Http\Request;
+use App\ShopComment;
 
 class ShopCommentController extends Controller
 {
@@ -13,7 +15,7 @@ class ShopCommentController extends Controller
      */
     public function index()
     {
-        //
+        return ShopComment::all()->keyBy('id');
     }
 
     /**

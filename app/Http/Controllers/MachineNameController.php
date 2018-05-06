@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\MachineName;
+use App\Machine;
 
 class MachineNameController extends Controller
 {
@@ -13,7 +15,7 @@ class MachineNameController extends Controller
      */
     public function index()
     {
-        //
+        return MachineName::all()->keyBy('id');
     }
 
     /**

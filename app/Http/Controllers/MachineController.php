@@ -82,4 +82,5 @@ class MachineController extends Controller
     {
         //
     }
+
 }

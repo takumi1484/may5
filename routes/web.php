@@ -11,12 +11,12 @@
 |
 */
 
-//Route::get('/{any}', function () {
-//    return view('vue');
-//})->where('any', '.*');
-
-Route::get('/', function () {
+Route::get('/{any}', function () {
     return view('vue');
 })->where('any', '.*');
+
+//Route::get('/', function () {
+//    return view('vue');
+//})->where('any', '.*');
 
 //　urlに/以降何を入力されてもappを表示させる

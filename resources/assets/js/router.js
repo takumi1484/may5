@@ -11,6 +11,7 @@ export default new VueRouter({
         { path: '/shop', component: require('./components/shop/shop.vue') },
         { path: '/music', component: require('./components/music/music.vue') },
         { path: '/about', component: require('./components/about/about.vue') },
+        { path: '/addshop', component: require('./components/addshop/addshop.vue') },
     ],
     scrollBehavior (to, from, savedPosition) {
         if (savedPosition) {

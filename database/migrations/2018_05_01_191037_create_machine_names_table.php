@@ -16,7 +16,6 @@ class CreateMachineNamesTable extends Migration
         Schema::create('machine_names', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('machine_id');
             $table->string('machine_name');
         });
     }
