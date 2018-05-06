@@ -1,9 +1,10 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import axiosControll from "./axiosControll";
+
 
 require('./bootstrap');
 
@@ -19,5 +20,8 @@ import router from './router'
 const base = new Vue({
     router,
     el: '#base',
+    created(){
+      axiosControll.init()
+    },
     render: h => h(require('./base/base.vue')),
 })

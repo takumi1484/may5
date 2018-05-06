@@ -1,3 +1,5 @@
+import axiosControll from "../../axiosControll";
+
 export default {
     mounted() {
         this.getShops();
@@ -13,12 +15,10 @@ export default {
         b: function () {
             alert("run method b")
         },
-        getShops(){
-            axios.get('/api/shop/')
-                .then(response => {
-                    console.log(response);
-                    this.shops = response.data;
-                })
+        getShops() {
+            axiosControll.get('shop', res => {
+                this.shops = res.data
+            })
         }
     },
 }
